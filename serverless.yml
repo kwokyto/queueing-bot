@@ -1,0 +1,22 @@
+service: sos2021photoboothbot
+
+provider:
+  name: aws
+  runtime: python3.6
+  profile:
+  environment:
+    TELEGRAM_TOKEN: ${file(./serverless.env.yml):TELEGRAM_TOKEN, '1439786164:AAG9Ni1For1SdRHQgEuDsjDLhVjzI96nK54'}
+
+functions:
+  webhook:
+    handler: handler.webhook
+    events:
+      - http: POST /
+
+  set_webhook:
+    handler: handler.set_webhook
+    events:
+      - http: POST /set_webhook
+
+plugins:
+  - serverless-python-requirements
