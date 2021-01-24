@@ -169,9 +169,6 @@ If you need any more assistance please contact @kwokyto! Thank you!"
     
     elif text[:15] == "/howmanyinqueue":
         first_response["message"] = how_many_in_queue + str(len(scan_table()["Items"]))
-
-    elif chat_id != 197107238:  # only kwok is admin
-        first_response["message"] = invalid
         
     elif text[:12] == "/howlongmore":
         result = how_long_more(chat_id)
@@ -179,6 +176,9 @@ If you need any more assistance please contact @kwokyto! Thank you!"
             first_response["message"] = how_long_more_message + str(result)
         else:
             first_response["message"] = not_in_queue
+
+    elif chat_id != 197107238:  # only kwok is admin
+        first_response["message"] = invalid
 
     elif text[:10] == "/viewqueue":
         first_response["message"] = view_queue()
