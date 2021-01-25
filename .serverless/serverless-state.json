@@ -184,7 +184,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/sos2021photoboothbot/dev/1611423784693-2021-01-23T17:43:04.693Z/sos2021photoboothbot.zip"
+                "S3Key": "serverless/sos2021photoboothbot/dev/1611562926999-2021-01-25T08:22:06.999Z/sos2021photoboothbot.zip"
               },
               "Handler": "handler.webhook",
               "Runtime": "python3.6",
@@ -214,7 +214,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/sos2021photoboothbot/dev/1611423784693-2021-01-23T17:43:04.693Z/sos2021photoboothbot.zip"
+                "S3Key": "serverless/sos2021photoboothbot/dev/1611562926999-2021-01-25T08:22:06.999Z/sos2021photoboothbot.zip"
               },
               "Handler": "handler.set_webhook",
               "Runtime": "python3.6",
@@ -237,24 +237,24 @@
               "SetUnderscorewebhookLogGroup"
             ]
           },
-          "SetUnderscorewebhookLambdaVersionBr5GjJ3yNcPs5h7NWWdFNv5KdC4XTdzNa3zEqlrWzI": {
+          "SetUnderscorewebhookLambdaVersion9lx3mBuV48AwWXvIGaq7pKHsZagXKoWrnPvRzePNsk": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SetUnderscorewebhookLambdaFunction"
               },
-              "CodeSha256": "rCmMeT2npeRTIEtYZoaD41PC1a3hsU+7J7nP5sqvG50="
+              "CodeSha256": "uhe462OxpecIjHr3TiaPy0gs89KjBaRHszF6EvUr6Gw="
             }
           },
-          "WebhookLambdaVersionVrYb7EEVphTHjEskQP130hkUFTifYxyq5HjYaXFc": {
+          "WebhookLambdaVersionUZHzED6CBai4QiUqYJLybfmUFZmdAXVfehATqbLS9Ho": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "WebhookLambdaFunction"
               },
-              "CodeSha256": "rCmMeT2npeRTIEtYZoaD41PC1a3hsU+7J7nP5sqvG50="
+              "CodeSha256": "uhe462OxpecIjHr3TiaPy0gs89KjBaRHszF6EvUr6Gw="
             }
           },
           "ApiGatewayRestApi": {
@@ -373,7 +373,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1611423768749": {
+          "ApiGatewayDeployment1611562919614": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -470,13 +470,13 @@
           "SetUnderscorewebhookLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SetUnderscorewebhookLambdaVersionBr5GjJ3yNcPs5h7NWWdFNv5KdC4XTdzNa3zEqlrWzI"
+              "Ref": "SetUnderscorewebhookLambdaVersion9lx3mBuV48AwWXvIGaq7pKHsZagXKoWrnPvRzePNsk"
             }
           },
           "WebhookLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "WebhookLambdaVersionVrYb7EEVphTHjEskQP130hkUFTifYxyq5HjYaXFc"
+              "Ref": "WebhookLambdaVersionUZHzED6CBai4QiUqYJLybfmUFZmdAXVfehATqbLS9Ho"
             }
           },
           "ServiceEndpoint": {
@@ -606,7 +606,7 @@
         "timeout": 6,
         "runtime": "python3.6",
         "vpc": {},
-        "versionLogicalId": "WebhookLambdaVersionVrYb7EEVphTHjEskQP130hkUFTifYxyq5HjYaXFc"
+        "versionLogicalId": "WebhookLambdaVersionUZHzED6CBai4QiUqYJLybfmUFZmdAXVfehATqbLS9Ho"
       },
       "set_webhook": {
         "handler": "handler.set_webhook",
@@ -621,7 +621,7 @@
         "timeout": 6,
         "runtime": "python3.6",
         "vpc": {},
-        "versionLogicalId": "SetUnderscorewebhookLambdaVersionBr5GjJ3yNcPs5h7NWWdFNv5KdC4XTdzNa3zEqlrWzI"
+        "versionLogicalId": "SetUnderscorewebhookLambdaVersion9lx3mBuV48AwWXvIGaq7pKHsZagXKoWrnPvRzePNsk"
       }
     },
     "configValidationMode": "warn",
@@ -645,7 +645,7 @@
     "artifact": "C:\\Users\\kwoky\\Documents\\GitHub\\queueing-bot\\.serverless\\sos2021photoboothbot.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/sos2021photoboothbot/dev/1611423784693-2021-01-23T17:43:04.693Z",
+    "artifactDirectoryName": "serverless/sos2021photoboothbot/dev/1611562926999-2021-01-25T08:22:06.999Z",
     "artifact": "sos2021photoboothbot.zip"
   }
 }

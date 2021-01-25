@@ -177,7 +177,7 @@ If you need any more assistance please contact @kwokyto! Thank you!"
         else:
             first_response["message"] = not_in_queue
 
-    elif chat_id != 197107238:  # only kwok is admin
+    elif chat_id not in [197107238, 157218330, 795985800]:  # only kwok is admin
         first_response["message"] = invalid
 
     elif text[:10] == "/viewqueue":
