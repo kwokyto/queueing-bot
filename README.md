@@ -1,4 +1,4 @@
-# queueing-bot for Start of Sem Dinner
+# Queueing System on Telegram
 
 This bot was created to maintain a queue system for the photo booth during the Start of Sem 2 Dinner 2021 in USP NUS.
 It was very well received and was subsequently adapted for use during the End of Sem 2 Dinner 2021.
