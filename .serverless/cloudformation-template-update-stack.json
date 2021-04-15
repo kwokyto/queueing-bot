@@ -167,7 +167,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sos2021photoboothbot/dev/1611562926999-2021-01-25T08:22:06.999Z/sos2021photoboothbot.zip"
+          "S3Key": "serverless/sos2021photoboothbot/dev/1618466935945-2021-04-15T06:08:55.945Z/sos2021photoboothbot.zip"
         },
         "Handler": "handler.webhook",
         "Runtime": "python3.6",
@@ -197,7 +197,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/sos2021photoboothbot/dev/1611562926999-2021-01-25T08:22:06.999Z/sos2021photoboothbot.zip"
+          "S3Key": "serverless/sos2021photoboothbot/dev/1618466935945-2021-04-15T06:08:55.945Z/sos2021photoboothbot.zip"
         },
         "Handler": "handler.set_webhook",
         "Runtime": "python3.6",
@@ -220,24 +220,24 @@
         "SetUnderscorewebhookLogGroup"
       ]
     },
-    "SetUnderscorewebhookLambdaVersion9lx3mBuV48AwWXvIGaq7pKHsZagXKoWrnPvRzePNsk": {
+    "SetUnderscorewebhookLambdaVersionScIpQ6RxK81BXHhB2vINDVWi54nPuR0MKmPe3ht81g": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SetUnderscorewebhookLambdaFunction"
         },
-        "CodeSha256": "uhe462OxpecIjHr3TiaPy0gs89KjBaRHszF6EvUr6Gw="
+        "CodeSha256": "pscP9fjfATimJDCs1uVJhpvf8S1AoC35fimJUeH5u7A="
       }
     },
-    "WebhookLambdaVersionUZHzED6CBai4QiUqYJLybfmUFZmdAXVfehATqbLS9Ho": {
+    "WebhookLambdaVersionFSZjn0GNejOrZgEokkCDc5r0X93UzledDdYZ0JyjA": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "WebhookLambdaFunction"
         },
-        "CodeSha256": "uhe462OxpecIjHr3TiaPy0gs89KjBaRHszF6EvUr6Gw="
+        "CodeSha256": "pscP9fjfATimJDCs1uVJhpvf8S1AoC35fimJUeH5u7A="
       }
     },
     "ApiGatewayRestApi": {
@@ -356,7 +356,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1611562919614": {
+    "ApiGatewayDeployment1618466930099": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -453,13 +453,13 @@
     "SetUnderscorewebhookLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SetUnderscorewebhookLambdaVersion9lx3mBuV48AwWXvIGaq7pKHsZagXKoWrnPvRzePNsk"
+        "Ref": "SetUnderscorewebhookLambdaVersionScIpQ6RxK81BXHhB2vINDVWi54nPuR0MKmPe3ht81g"
       }
     },
     "WebhookLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "WebhookLambdaVersionUZHzED6CBai4QiUqYJLybfmUFZmdAXVfehATqbLS9Ho"
+        "Ref": "WebhookLambdaVersionFSZjn0GNejOrZgEokkCDc5r0X93UzledDdYZ0JyjA"
       }
     },
     "ServiceEndpoint": {
