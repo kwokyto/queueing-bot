@@ -7,7 +7,7 @@ import logging
 
 from dynamo_call import *
 
-ADMIN_LIST = [197107238]
+ADMIN_LIST = [197107238, 834582246] # [kwok, alison]
 
 # Logging is cool!
 logger = logging.getLogger()
