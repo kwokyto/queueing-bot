@@ -7,6 +7,8 @@ import logging
 
 from dynamo_call import *
 
+ADMIN_LIST = [197107238]
+
 # Logging is cool!
 logger = logging.getLogger()
 if logger.handlers:
@@ -23,7 +25,6 @@ ERROR_RESPONSE = {
     'statusCode': 400,
     'body': json.dumps('Oops, something went wrong!')
 }
-
 
 def configure_telegram():
     """
@@ -177,7 +178,7 @@ If you need any more assistance please contact @kwokyto! Thank you!"
         else:
             first_response["message"] = not_in_queue
 
-    elif chat_id not in [197107238, 157218330, 795985800]:  # only kwok is admin
+    elif chat_id not in ADMIN_LIST:
         first_response["message"] = invalid
 
     elif text[:10] == "/viewqueue":
