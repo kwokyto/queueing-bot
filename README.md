@@ -4,6 +4,8 @@ This bot was created to maintain a queue system for the photo booth during the S
 It was very well received and was subsequently adapted for use during the End of Sem 2 Dinner 2021.
 The bot can be accessed [here](https://telegram.me/sos2021photoboothbot).
 
+:warning: This bot was disabled as of 17 April 2021. Contact @kwokyto on Telegram for any enquiries.
+
 ## User Commands
 
 ### `/start`
